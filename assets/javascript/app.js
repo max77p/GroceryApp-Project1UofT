@@ -314,7 +314,8 @@ function randomize() {
         }
         // console.log(chosen);
 
-        var imgTags = document.getElementsByTagName('img');//get image array inside carousal
+        var imgTags = document.getElementsByClassName('imageCar');//get image array inside carousal
+        console.log(imgTags);
         var imgMeta = document.getElementsByClassName('carousel-caption');//get meta section of all 4 images
         var imgH3 = $(imgMeta).find('h3');//get array of h3 elements in meta section
         var imgP = $(imgMeta).find('p');//get array of p elements in meta section

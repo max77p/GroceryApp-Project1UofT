@@ -1,5 +1,6 @@
 body{
     height:100vh;
+    font-family: 'Song Myung', serif;
 }
 
 .wrapper {/*flex box*/
@@ -10,6 +11,27 @@ body{
 .topNav{
     box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.3), 1px 0px 15px 2px rgba(0, 0, 0, 0.1);
     background-color: #f8f8f8;
+}
+.logoTop{
+    position: absolute;
+    top: .6em;
+    margin: 0 auto;
+    margin-left: 35%;
+    margin-right: 65%;
+    display: flex;
+}
+
+.logoImage{
+    height: 202%;
+}
+.logoName{
+    margin: 0;
+    line-height: 2.2;
+    font-family: 'Song Myung', serif;
+    font-size: 200%;
+    display: flex;
+    height: 1em;
+    justify-content: center;
 }
 
 #sidebar {/*side bar dimensions*/
@@ -62,7 +84,7 @@ a, a:hover, a:focus {/*styling of sidebar anchor elements*/
 
 #sidebar {/*side bar color and transition property*/
     background: #f8f8f8;
-    color:  #777777;
+    color:inherit;
     transition: all 0.3s;
 }
 
@@ -104,9 +126,12 @@ footer {
 /******todo list**********************************************/
 .todoContainer{
     /* margin-top:5em; */
-    
-    min-width: 50%;
-    /* height:20.6em; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 50em;
+    width:100%;
+    height:100%;
     padding:1em;
     padding-bottom:0;
     /* max-width: 50em;
@@ -114,12 +139,9 @@ footer {
     text-align: left;
     color: #3b3b3b;
     font-weight: bold;
-    font-family: 'Helvetica', 'Arial', sans-serif;
+    /* font-family: 'Helvetica', 'Arial', sans-serif; */
     /* border:1px solid grey; */
     /* background-color: whitesmoke;*/
-    background: #fffbfb78; 
-    
-    
 }
 
 .listToggleBtns{
@@ -127,6 +149,7 @@ footer {
     justify-content: center;
     padding-top:1em;
     padding-bottom:1em;
+    margin-bottom: 20%;
 }
 .btn.active.focus{
     outline: none !important;
@@ -157,6 +180,8 @@ footer {
     overflow:hidden;
     overflow-y:scroll;
     height:30em;
+    background: #ffffffab;
+    padding-top: 1em;
 }
 
 /* #list-items li{
@@ -215,6 +240,7 @@ form {
   .remove {
     float: right;
     cursor: pointer;
+    padding-right:1em;
   }
   
   .completed { text-decoration: line-through; }/*cross out if completed*/
@@ -314,7 +340,9 @@ margin-right:2em;
 }
 
 #userAuth{/*for the sign in icon*/
-    float:right
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 .manIcon{
     padding-right: .5em;
@@ -343,7 +371,7 @@ transition: all 0.3s;
 }
 #sidebar {/*side bar color and transition property*/
 background: #f8f8f8;
-color:  #777777;
+color: inherit;
 transition: all 0.3s;
 }
 .sidebar-header {/*sidebar padding for logo*/
@@ -355,6 +383,8 @@ border-bottom: 1px #e5e5e5 solid;
 padding: 0.625em;
 font-size: 1.3em;
 display: block;
+text-align: left;
+    margin-left: 2em;
 }
 #sidebar ul li{
 padding-top:2em;
@@ -367,7 +397,7 @@ color:#4c8cd6
 #logoDiv{
     display: flex;
     justify-content: center;
-    font-family: 'Josefin Sans', sans-serif;
+    /* font-family: 'Josefin Sans', sans-serif; */
     font-size: 3em;
     margin-top: 15px;
 }
@@ -395,10 +425,10 @@ color:#4c8cd6
     background: linear-gradient(to left, rgba(175, 175, 175, 0.13), rgba(230, 230, 230, 0.71) );
 }
 
-header {
+/* header {
     font-family: 'Cinzel', serif;
     font-size: 2em;
-}
+} */
 
 #myCarousel.carousel.slide {
     height: 100%
@@ -422,8 +452,7 @@ footer {
 }
 
 .mainCarousel{
-max-height:33em;
-height:100%;
+height:45em;
 }
 .imgMeta{
     font-size:1em;
@@ -475,7 +504,7 @@ height:100%;
 }
 
 body {
-    /* background-color:#ffffff; */
+    background-color:#ffffff;
     background: linear-gradient( rgba(175, 175, 175, 0.2), rgba(175, 175, 175, 0.2) ), url(../images/backgroundLowRes.jpg);
     background-size: cover;
     background-position: center;
@@ -553,7 +582,7 @@ body {
 
 .mainCard {
     display: inline-block;
-    width: 33.3%;
+    width: 100%;
     justify-content: center;
     background: #fffbfb82
 }
@@ -592,12 +621,15 @@ h5 {
     height: 7em;
 }
 
-.rowGrid{
+/* .rowGrid{
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
+} */
+
+.col-md-4{
+    /* width:100%; */
 }
 
 /******************************************/
-
