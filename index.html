@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>BasketCase Main</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" media="screen" href="./assets/css/style.css" />
+
+
+</head>
+
+<body>
+
+
+    <!-- <div class="wrapper"> -->
+    <nav class="navbar fixed-top navbar-light bg-light topNav">
+        <div id="toggler">
+            <i class="fas fa-bars pullChevron"></i>
+        </div>
+        <!-- <a class="navbar-brand" href="#">Fixed top</a> -->
+        <div id="userAuth">
+            <a href="#" id="profile1" data-toggle="popover" data-placement="bottom" data-trigger="focus">
+                <div class="profile1">
+                    <i class="fas fa-user manIcon"></i>
+                </div>
+                <!-- <img src="#" id="profile" alt="profilephoto"> -->
+            </a>
+        </div>
+    </nav>
+
+    <nav id="sidebar" class="toggled">
+
+        <!-- Sidebar Header -->
+        <div class="sidebar-header">
+            <h3>BasketCase</h3>
+            <!-- <i class="fas fa-shopping-basket"></i> -->
+
+        </div>
+
+
+        <!-- Sidebar Links -->
+        <ul class="menuItems">
+            <li>
+                <a href="recipe.html"><i class="fas fa-utensils"></i> Recipes</a>
+
+            </li>
+            <li>
+                <a href="inspire.html">
+                    <i class="far fa-lightbulb"></i> Get Inspired</a>
+
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fas fa-birthday-cake"></i> TBD</a>
+
+            </li>
+        </ul>
+
+
+    </nav>
+
+
+
+    <div class="container todoContainer">
+        <ul id="list-items"></ul>
+        <form class="add-items">
+            <input type="text" class="form-control" id="todo-list-item" placeholder="Your grocery list here">
+            <button class="add" type="submit">
+                <i class="fas fa-plus"></i>
+            </button>
+        </form>
+        <!--radio buttons for toggling differnt stuff-->
+        <div class="btn-group btn-group-toggle listToggleBtns" data-toggle="buttons">
+            <label class="btn btn-secondary toggleBtnStyle active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> All
+            </label>
+            <label class="btn btn-secondary toggleBtnStyle">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Complete
+            </label>
+            <label class="btn btn-secondary toggleBtnStyle">
+                <input type="radio" name="options" id="option3" autocomplete="off"> TBD
+            </label>
+        </div>
+    </div>
+
+
+
+
+
+    <div class="popoverContent hide">
+        <div class="firstRow">
+            <div class="nameOutter">
+                <p class="name"></p>
+                <p class="email"></p>
+            </div>
+            <!-- <img src="#" id="profileInside" alt="profilephoto"> -->
+        </div>
+
+        <div class="secondRow">
+            <button type="button" class="btn btn-secondary signOut">sign out</button>
+            <button type="button" class="btn btn-secondary signIn">sign in</button>
+        </div>
+
+    </div>
+
+    <!-- </div> -->
+
+
+
+
+    <!-- <footer class="container-fluid text-center">
+        <p>Spotify</p>
+    </footer> -->
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+    <script src="./assets/javascript/app.js"></script>
+    <script src="./assets/javascript/inspire.js"></script>
+</body>
+
+</html>
